@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Murilo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navegacao container">
+        <h1>Murilo Milani</h1>
+        
+        <div class="m_foto">
+                <a href="index.html"><img src="img/murilo.png" alt="Murilo Milani"></a>
+        </div>
+        
+        <div class="menu content">
+            <nav>
+                <ul>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Trabalhos">Trabalhos</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </nav>
+            <span id="bt_menu" onclick="botao_menu()">M</span>
+            <script>
+                function botao_menu(){
+                    var x = document.getElementById("menu");
+                    if(x.style.display == "none"){
+                        x.style.display = "block";
+            
+                    }else{
+                        x.style.display = "none"
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    
+    <main>
+
+
+        <section class="banner container">
+
+            <div class="content">
+                <div>
+                    <h2>Quem é <br> Murilo Milani?</h2>
+                </div>
+
+                <div class="m_foto2">
+                    <img src="img/murilo.png" alt="Murilo Milani">
+                </div>
+
+                <div class="artigo">
+                    <img src="img/imagem do texto.jpg" alt="Pessoas Trabalhando" class="desenho-texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non, nihil doloremque ipsum possimus temporibus delectus quisquam id fuga dignissimos voluptatibus a! Ex libero impedit dolorum, blanditiis repellendus praesentium expedita?</p> <!--TODO:TEXTO-->
+                </div>
+
+            </div>
+                
+        </section>
+        
+        <section id="Habilidades" class="container">
+
+            <h2>Habilidades</h2>
+
+
+            <div id="conteudo-habilidades"> 
+
+                <div class="content" id="lista-habilidades"> 
+                    <ul>
+                        
+                        <li>Photoshop</li>
+                        
+                        <li>HTML5</li>
+                        
+                        <li>CSS3</li>
+                        
+                        <li>C#</li>
+                        
+                        <li>Cloud</li>
+                        
+                        <li>SQL</li>
+                        
+                        <li>React</li>
+                        
+                        <li>React Native</li>
+                        
+                        <li>UX</li>
+                        
+                        <li>Scrum</li>
+                    </ul>
+
+                </div>  
+                
+                <span>
+
+                    <img src="img/estrelas.png" alt="estrelas" class="estrelas">
+                    <p>Trabalho profissional, 5 estrelas!</p>
+                </span>
+                
+
+                
+            </div>
+
+            
+        </div>
+
+            
+        </section>
+
+        <section id="Trabalhos" class="container">
+            
+            <h2 class="content">Trabalhos</h2>
+
+            <div class="alinhar">
+                <div id="boxes-empresas" class="boxes container">
+                    
+                    <div class="empresas" class="box content">
+                        <img src="img/trabalho1.png" alt="hamburgueria">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae alias reprehenderit perspiciatis neque itaque hic blanditiis laudantium ut, vitae saepe, labore nostrum, voluptates debitis perferendis accusamus est quo tempore!</p>
+                    </div>
+                    
+                    <div class="empresas" class="box content">
+                        <img src="img/trabalho2.png" alt="ponto digital">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae alias reprehenderit perspiciatis neque itaque hic blanditiis laudantium ut, vitae saepe, labore nostrum, voluptates debitis perferendis accusamus est quo tempore!</p>
+                    </div>
+                    
+                    <div class="empresas" class="box content">
+                        <img src="img/trabalho3.png" alt="instagram_logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae alias reprehenderit perspiciatis neque itaque hic blanditiis laudantium ut, vitae saepe, labore nostrum, voluptates debitis perferendis accusamus est quo tempore!</p>
+                    </div>
+                </div>
+                    
+            </div>
+            
+        </section>
+
+        <section id="Contato" class=" container">
+            <h2 class="content">Contato</h2>
+
+            <div class="formulario content">
+                <form action="" method="">
+                    <div>
+                        <label for="nome">Digite seu nome ou nome da empresa</label>
+                        <input type="text" name="nome" maxlength="50">
+                    </div>
+                    <div>
+                        <label for="email">Digite seu E-mail para contato</label>
+                        <input type="email" name="email" maxlength="50">
+                    </div>
+                    <div >
+                        <label  for="mensagem">Digite sua mensagem, coloque o motivo do contato</label>
+                        <input id="mensagem" type="text" name="mensagem" maxlength="300">
+                    </div>
+                    <div class="formulario">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container alinhar">
+        <h3>Redes Sociais</h3>
+        <div class="imagens ">
+            <a href="#"><img src="img/facebook.png" alt=""></a>
+            <a href="#"><img src="img/instagram.png" alt=""></a>
+        </div>
+            
+        <div class="content"> 
+            <a href="index.html">Voltar para o topo!</a>
+
+        </div>
+    </footer>
+</body>
+</html>

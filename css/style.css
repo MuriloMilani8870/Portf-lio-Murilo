@@ -1,0 +1,624 @@
+/* <presets> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+} /*deixando fluido*/
+
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+} /*deixando fluido*/
+h1{
+    display: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+} /*todos os pais*/
+
+.content{
+    width: 90%;
+    margin: auto;
+}/*filhos*/
+/* </presets> */
+
+/* #bt_menu{
+    display: none;
+} */
+
+/* <menu de navegação> */
+.navegacao {
+    border-bottom: solid 2px #000;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background: #fff;
+    margin-top: -122px;
+}
+.menu{
+    height: 4em;
+    background: #fff;
+}
+.m_foto{
+    margin: 10px;
+    height: 100px;
+    max-width: 100px;
+}
+.menu nav ul{
+    display: flex;
+    background: none;
+}
+.menu nav ul li{
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+    flex-grow: 1;
+    padding: 0.5em 6em;
+    border: solid 2px #000;
+}
+.menu nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.555);
+    color: #fff;
+}
+.menu nav ul li a:active{
+    background: #ffbe21;
+}
+/* </menu de navegação> */
+
+
+/* <banner> */
+.banner{
+    margin-top: 122px;
+    height: calc(100vh - 122px);
+    border-bottom: solid 2px #000;
+}
+.banner > div > div > h2{
+    text-align: center;
+    color: #00e4ff;
+    font-family: 'Muli', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+.m_foto2{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    max-width: 300px;
+}
+.artigo{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+.desenho-texto{
+    max-height: 325px;
+    max-width: 525px;
+}
+.artigo p{
+    font-size: 2em;
+    font-family: 'Muli', sans-serif;
+    color: #ffbe21;
+    align-self: stretch;
+    width: 40%;
+}
+/* </banner> */
+
+
+/* <habilidades> */
+#Habilidades{
+    height: calc(100vh - 122px);
+    border-bottom: solid 2px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Habilidades > h2{
+    text-align: center;
+    color: #ffbe21;
+    font-family: 'Muli', sans-serif;
+    font-size: 4em;
+}
+#conteudo-habilidades{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+}
+#lista-habilidades{
+    width: 200px;
+}
+#lista-habilidades > ul{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+#lista-habilidades > ul > li{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.9em;
+    width: 200px;
+    margin: 10px;
+}
+span{
+    display: none;
+}
+span p{
+    margin-top: -40px;
+    padding-left: 120px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.estrelas{
+    max-width: 950px;
+    max-height: 900px;
+    padding-left: 100px;
+}
+ul:hover{
+    cursor: pointer;
+    background: #eee;
+}
+#lista-habilidades:hover + span{
+    display: block;
+}
+/* </habilidades> */
+
+
+/* <trabalho> */
+#Trabalhos{
+    height: calc(100vh - 122px);
+    border-bottom: solid 2px #000;
+    background: #00e4ff;
+}
+#Trabalhos > h2{
+    text-align: center;
+    color: #ffbe21;
+    font-family: 'Muli', sans-serif;
+    font-size: 4em;
+}
+.alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#boxes-empresas{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.empresas{
+    margin-top: 40px;
+    width: 25%;
+}
+.empresas img{
+   height: 48%;
+   max-width: 400px;
+}
+.empresas p{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    padding: 1.2em;
+    background: #fff;
+    margin-top: -30px;
+    border-radius: 10px;
+}
+/* </trabalhos> */
+
+/* <contato> */
+#Contato{
+    height: calc(80vh - 122px);
+    border-bottom: solid 2px #000;
+}
+#Contato > h2{
+    text-align: center;
+    color: #ffbe21;
+    font-family: 'Muli', sans-serif;
+    font-size: 4em;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+label{
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    display: block;
+}
+#mensagem{
+    height: 200px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 3px 0;
+}
+input{
+    width: 100%;
+    height: 35px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"] /*[]seleciona por atributo*/ {
+    background-color: #ffbe21;
+    color: #361a0c;
+    border: 1px solid #ff9933;
+    margin: 3px 0;
+    height: 40px;
+    width: 60%;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.4em;
+    align-self: center;
+}
+input[type="submit"]:hover /*[]seleciona por atributo*/ {
+    background-color: #ff9933;
+    border: 0.6px solid #ff9933;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.5); /*primeiro é o deslocamento horizontal, depois o verticar, e depois a cor.*/
+    margin: 4px 0 20px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* </contatos> */
+
+/* <footer> */
+footer{
+    height: 20vh;
+    background: #ffbe21; 
+}
+footer h3{
+    text-align: center;
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+}    
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 20px;
+}
+.imagens img{
+    max-width: 60px;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+}
+footer div a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+    font-family: 'Muli', sans-serif;
+}
+/* </footer> */
+
+/* media 1 */
+@media screen and (max-width: 1366px){
+    /* menu */
+    .navegacao {
+        margin-top: -130px;
+    }
+    .menu{
+        height: 3em;
+    }
+    .menu nav ul li a{
+        font-size: 1.3em;
+        padding: 0.5em 4em;
+    }
+    .m_foto{
+        margin: 10px;
+        height: 65px;
+        max-width: 65px;
+    }
+
+    /* banner */
+    .banner{
+        margin-top: 130px;
+        height: calc(100vh - 80px);
+    }
+    .banner > div > div > h2{
+        font-size: 3em;
+    }
+    .m_foto2{
+        height: 200px;
+        max-width: 200px;
+    }
+    .artigo{
+        margin-top: 20px;
+    }
+    .desenho-texto{
+        max-height: 185px;
+        max-width: 350px;
+    }
+    .artigo p{
+        font-size: 1.3em;
+        width: 42%;
+    }
+
+    /* habilidades */
+    #Habilidades{
+        height: calc(100vh - 80px);
+    }
+    #Habilidades > h2{
+        font-size: 3em;
+    }
+    #lista-habilidades > ul > li{
+        font-size: 1.5em;
+        margin: 5px;
+    }
+    #lista-habilidades > ul{
+        margin-top: -40px;
+    }
+
+    /* Trabalhos */
+    #Trabalhos{
+        height: calc(100vh - 80px);
+    }
+    #Trabalhos > h2{
+        font-size: 3em;
+    }
+    .empresas{
+        margin-top: 30px;
+        width: 25%;
+    }
+    .empresas img{
+        height: 48%;
+        max-width: 400px;
+     }
+     .empresas p{
+        font-size: 1em;
+        margin-top: -20px;
+    }
+
+    /* contato */
+    #Contato{
+        height: calc(80vh - 80px);
+    }
+    #Contato > h2{
+        font-size: 3em;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
+    label{
+        font-size: 1em;
+    }
+    #mensagem{
+        height: 120px;
+    }
+    input{
+        height: 25px;
+    }
+    input[type="submit"] /*[]seleciona por atributo*/ {
+        margin: 3px 0;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+    /* footer */
+    footer h3{
+        font-size: 1.3em;
+    }
+    .imagens{
+        margin-top: 10px;
+    }    
+    .imagens img{
+        max-width: 40px;
+    }
+    footer div a{
+        font-size: 1.1em;
+    }
+}
+/* media 1 */
+
+/* media 2 */
+@media screen and (max-width: 1126px){
+    /* menu */
+    .navegacao {
+        margin-top: -130px;
+    }
+    .menu{
+        height: 3em;
+    }
+    .menu nav ul li a{
+        font-size: 1.2em;
+        padding: 0.5em 5em;
+    }
+    .m_foto{
+        margin: 10px;
+        height: 65px;
+        max-width: 65px;
+    }
+
+    /* banner */
+    .banner{
+        margin-top: 130px;
+        height: calc(100vh - 80px);
+    }
+    .banner > div > div > h2{
+        font-size: 3em;
+    }
+    .m_foto2{
+        height: 200px;
+        max-width: 200px;
+    }
+    .artigo{
+        margin-top: 30px;
+    }
+    .desenho-texto{
+        max-height: 185px;
+        max-width: 350px;
+    }
+    .artigo p{
+        font-size: 1.3em;
+        width: 42%;
+    }
+
+    /* habilidades */
+    #Habilidades{
+        height: calc(100vh - 80px);
+    }
+    #Habilidades > h2{
+        font-size: 3em;
+    }
+    #lista-habilidades > ul > li{
+        font-size: 1.5em;
+        margin: 5px;
+    }
+    #lista-habilidades > ul{
+        margin-top: -40px;
+    }
+
+    /* Trabalhos */
+    #Trabalhos{
+        height: calc(100vh - 80px);
+    }
+    #Trabalhos > h2{
+        font-size: 3em;
+    }
+    .empresas{
+        margin-top: 30px;
+        width: 30%;
+    }
+    .empresas img{
+        height: 48%;
+        max-width: 400px;
+        }
+        .empresas p{
+        font-size: 1em;
+        margin-top: -20px;
+    }
+
+    /* contato */
+    #Contato{
+        height: calc(80vh - 80px);
+    }
+    #Contato > h2{
+        font-size: 3em;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
+    label{
+        font-size: 1em;
+    }
+    #mensagem{
+        height: 120px;
+    }
+    input{
+        height: 25px;
+    }
+    input[type="submit"] /*[]seleciona por atributo*/ {
+        margin: 3px 0;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+    /* footer */
+    footer h3{
+        font-size: 1.3em;
+    }
+    .imagens{
+        margin-top: 10px;
+    }    
+    .imagens img{
+        max-width: 40px;
+    }
+    footer div a{
+        font-size: 1.1em;
+    }
+
+}
+/* media 2 */
+
+/* media 3 */
+@media screen and (max-width: 990px){
+    /* menu */
+    .menu nav ul li a{
+        font-size: 1.2em;
+        padding: 0.5em 4em;
+    }
+
+    /* banner */
+    .banner > div > div > h2{
+        font-size: 2.8em;
+    }
+    .m_foto2{
+        height: 190px;
+        max-width: 190px;
+    }
+    .artigo{
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    /* habilidades */
+    #Habilidades > h2{
+        font-size: 2.8em;
+    }
+    #lista-habilidades > ul > li{
+        font-size: 1.4em;
+    }
+
+    /* Trabalhos */
+    #Trabalhos > h2{
+        font-size: 2.8em;
+    }
+    #boxes-empresas{
+        width: 85%;
+    }
+}
+/* media 3 */
+
+/* media 4 */
+@media screen and (max-widht: 720px){
+    .navegacao nav{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 80%;
+        text-align: right;
+        display: none;
+        
+    }
+    #bt_menu{
+        display: block;
+        padding: 0.8em;
+        margin-right: 1em;
+        background-color: #fff;
+        color: #000;
+    }
+    .navegacao > nav > ul{
+        flex-direction: column;
+        background: #000;
+    }
+    .navegacao  nav  a{
+        display: block;
+    }
+}
+/* media 4 */
